@@ -7,13 +7,43 @@ Include:
 3. Project Presentation slide
 4. Output: Checkpoint - infer Result
 
+# Thành Viên :
+1. Dương Tiến Hoàng - 20240888e
+2. Nguyễn Tuấn Anh - 20241171e
+3. Nguyễn Duy Khánh Linh - 20240821e
+4. Trần Quốc Hùng - 20240486e
+
+# Phân Công Công Việc: 
+1. Trần Quốc Hùng
+- Nghiên cứu lựa chọn kiến trúc 
+- Triển khai Finetune pipeline 
+- Phân công công việc
+- Chạy Pretrain model
+- implement upload dataset lên driver
+- Implement luồng training trên colap
+
+2. Nguyễn Duy Khánh Linh
+    •	Tổng hợp và viết báo cáo
+	•	Tìm hiểu các mô hình tiềm năng
+	•	Đánh giá bộ dữ liệu
+	•	Đánh giá mô hình và đưa ra kết quả
+3. Dương Tiến Hoàng
+    •	Chuẩn bị slide
+	•	Tìm hiểu các mô hình tiềm năng
+	•	Tiền xử lý dữ liệu
+4. Nguyễn Tuấn Anh
+	•	Viết báo cáo
+    •	Tìm hiểu các mô hình tiềm năng
+	•	Tiền xử lý dữ liệu
+	•	Đánh giá mô hình và đưa ra kết quả
+
 # Fine-tuning Wav2Vec2 cho Bài toán Nhận dạng Giọng nói (ASR) Tiếng Việt
 
 Project trong khuôn khổ BTL môn học Trí tuệ nhân tạo tạo sinh Audio. Nhóm sử dụng Google Colab để fine-tune mô hình Wav2Vec2 cho bài toán Nhận dạng Giọng nói Tự động (ASR) trên dữ liệu Tiếng Việt. Mô hình được fine-tune dựa trên các checkpoint đã được huấn luyện trước và sử dụng tập dữ liệu tùy chỉnh. Dataset và các checkpoint được lưu trên Google Drive.
 
 ## Giới thiệu
 
-Wav2Vec2 là mô hình ASR của Facebook AI, giúp học cách biểu diễn giọng nói từ dữ liệu không nhãn. Mô hình này có thể được fine-tune trên một lượng nhỏ dữ liệu có nhãn để đạt được kết quả ấn tượng. Dự án này tập trung vào việc áp dụng Wav2Vec2 cho ngôn ngữ Tiếng Việt bằng cách fine-tune mô hình gốc trên một tập dữ liệu Tiếng Việt cụ thể.
+Wav2Vec2 là mô hình ASR của Facebook AI, giúp học cách biểu diễn giọng nói từ dữ liệu không nhãn. Mô hình này có thể được fine-tune trên một lượng nhỏ dữ liệu có nhãn để đạt được kết quả ấn tượng. 
 
 Mô hình được fine-tune sử dụng Connectionist Temporal Classification (CTC) [1], một thuật toán phổ biến cho các bài toán sequence-to-sequence như ASR.
 
